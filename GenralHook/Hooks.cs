@@ -42,7 +42,18 @@ namespace BDD.GenralHook
             Console.WriteLine("AfterTestRun");
         }
 
+        [BeforeStep]
+        public void BeforeStep()
+        {
 
+
+        }
+
+        [AfterStep]
+        public void AfterStep()
+        {
+
+        }
 
     }
 }
