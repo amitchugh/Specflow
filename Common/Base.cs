@@ -21,7 +21,8 @@ namespace BDD.Common
             FirefoxProfile profile = new FirefoxProfile();
             FirefoxProfileManager pm = new FirefoxProfileManager();
             profile = pm.GetProfile("default");
-            String browser = ConfigurationManager.AppSettings.Get("Browser");
+            String browser = "firefox";
+                //ConfigurationManager.AppSettings.Get("Browser");
 
             if (browser.Equals("chrome"))
             {
@@ -34,7 +35,8 @@ namespace BDD.Common
                 FirefoxBinary binary = new FirefoxBinary(@"C:\Program Files (x86)\Mozilla Firefox\firefox.exe");
                 driver = new FirefoxDriver(binary, profile);
             }
-            driver.Navigate().GoToUrl(ConfigurationManager.AppSettings.Get("url"));
+            driver.Navigate().GoToUrl("https://www.yatra.com/");
+            //ConfigurationManager.AppSettings.Get("url")
             driver.Manage().Window.Maximize();
             driver.Manage().Timeouts().ImplicitlyWait(TimeSpan.FromSeconds(Convert.ToInt32(ConfigurationManager.AppSettings.Get("wait"))));
 

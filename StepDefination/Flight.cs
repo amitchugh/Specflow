@@ -32,8 +32,7 @@ namespace BDD.StepDefination
         [Then(@"Validate the title of the HomePage")]
         public void ThenValidateTheTitleOfTheHomePage()
         {
-            Assert.AreSame(home.checkTitle(), "Flight, Cheap Air Tickets , Hotels, Holiday, Trains Package Booking - Yatra.com");
-
+            Assert.IsTrue(home.checkTitle().Contains("Book Flights"),"Title is not same");
 
         }
 

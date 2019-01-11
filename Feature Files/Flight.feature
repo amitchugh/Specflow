@@ -1,4 +1,4 @@
-﻿	Feature: HomePage
+﻿Feature: Flight
 Background: Pre-requisites
 	Given User is at HomePage
 

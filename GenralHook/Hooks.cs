@@ -15,20 +15,20 @@ namespace BDD.GenralHook
         // For additional details on SpecFlow hooks see http://go.specflow.org/doc-hooks
 
         [BeforeScenario]
-        public void BeforeScenario()
+        public static void BeforeScenario()
         {
             Console.WriteLine("BeforeScenario");
         }
 
         [AfterScenario]
-        public void AfterScenario()
+        public static void AfterScenario()
         {
             Console.WriteLine("AfterScenario");
             //TODO: implement logic that has to run after executing each scenario
         }
 
         [BeforeTestRun]
-        public void BeforeTestRun()
+        public static void BeforeTestRun()
         {
 
             Base.IntDriver();
@@ -37,22 +37,22 @@ namespace BDD.GenralHook
         }
 
         [AfterTestRun]
-        public void AfterTestRun()
+        public static void AfterTestRun()
         {
             Console.WriteLine("AfterTestRun");
         }
 
         [BeforeStep]
-        public void BeforeStep()
+        public static void BeforeStep()
         {
-
+            Console.WriteLine("Before Step");
 
         }
 
         [AfterStep]
-        public void AfterStep()
+        public static void AfterStep()
         {
-
+            Console.WriteLine("After Step");
         }
 
     }
