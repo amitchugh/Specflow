@@ -88,6 +88,7 @@
     <Compile Include="StepDefination\GenericStepDefinition.cs" />
     <Compile Include="StepDefination\Login.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utility\ExcelReader.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -102,9 +103,7 @@
     <None Include="packages.config" />
     <None Include="Resources\Configurations\conf.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Utility\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
